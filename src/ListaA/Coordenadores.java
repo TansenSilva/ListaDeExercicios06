@@ -12,7 +12,21 @@ public class Coordenadores extends Funcionarios{
     }
 
     public void adicionarProfessor(Professores professor){
-        this.professoresSupervisionados.add(professor);
+        if (this.professoresSupervisionados.size()<5){
+            this.professoresSupervisionados.add(professor);
+        }else{
+            System.out.println("Quantidade máxima de professores atingida");
+        }
+
+
+    }
+
+
+
+
+    public int quantidade(){
+        System.out.println(professoresSupervisionados.size());
+        return professoresSupervisionados.size();
     }
 
     public void professoresCoordenados() {
@@ -24,12 +38,8 @@ public class Coordenadores extends Funcionarios{
 
     @Override
     public double aumentoSalario() {
-        return getSalario()+(getSalario()*0.05);
-    }
-
-    @Override
-    public void aumento(double salario) {
-
+        this.setSalario(this.getSalario()+(this.getSalario()*0.05));
+        return this.getSalario();
     }
 
     public Set<Professores> getProfessoresSupervisionados() {

@@ -22,16 +22,11 @@ public class Professores extends Funcionarios {
     }
 
     @Override
-    public void aumento(double salario) {
-        salario = salario+(salario*0.1);
-        System.out.println("salario reajustado: "+salario);
-    }
-
-    @Override
     public double aumentoSalario() {
-
-        return getSalario()+(getSalario()*0.1);
+        this.setSalario(this.getSalario()+(this.getSalario()*0.1));
+        return this.getSalario();
     }
+
 
     public void adicionarTurma(Turma turma){
         this.turma.add(turma);

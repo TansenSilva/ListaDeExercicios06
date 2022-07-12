@@ -30,12 +30,8 @@ public class FuncionariosAdministrativos extends Funcionarios {
 
     @Override
     public double aumentoSalario() {
-        return getSalario()+(getSalario()*0.1);
-    }
-
-    @Override
-    public void aumento(double salario) {
-
+        this.setSalario(this.getSalario()+(this.getSalario()*0.1));
+        return this.getSalario();
     }
 
 
