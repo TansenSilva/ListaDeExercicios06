@@ -1,5 +1,5 @@
 package ListaB;
 
 public interface FiguraGeometrica {
-    public void calculoArea();
+    public abstract void calculoArea();
 }
