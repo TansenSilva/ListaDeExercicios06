@@ -1,3 +1,5 @@
+package ListaA;
+
 public class FuncionariosAdministrativos extends Funcionarios {
 
     private String funcaoAdministrativa;

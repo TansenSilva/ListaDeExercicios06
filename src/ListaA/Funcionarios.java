@@ -1,3 +1,5 @@
+package ListaA;
+
 public abstract class Funcionarios {
 
     //Atributos

@@ -1,3 +1,5 @@
+package ListaA;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,7 +29,7 @@ public class Professores extends Funcionarios {
 
     @Override
     public double aumentoSalario() {
-        System.out.println("antes do retorno "+getSalario());
+
         return getSalario()+(getSalario()*0.1);
     }
 
@@ -38,7 +40,7 @@ public class Professores extends Funcionarios {
     public void turmasProfessores() {
         System.out.println("Lista de Turmas:");
         for(Turma t:turma){
-            System.out.println("Nome da Turma do professor: " + t.getNome());
+            System.out.println("Turma do professor: " + t.getNome());
         }
     }
 
